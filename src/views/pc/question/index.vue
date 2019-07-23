@@ -1,0 +1,508 @@
+
+<template>
+    <div class="question">
+        <base-header></base-header>
+        <div class="question_banner">
+            <h3>Q&A</h3>
+            <div class="line_height"></div>
+            <h4>常见问题</h4>
+
+        </div>
+
+        <div class="question_content container">
+            <div class="question_content_r">
+                <!--active_question-->
+                <ul>
+                    <li
+                        :class="{active_question:index===num}"
+                        v-for="item,index in title"
+                        @click="changeTag(index)"
+
+                    >
+                        <a href="javascript:;">
+                            {{item.name}}
+                        </a>
+                    </li>
+                </ul>
+                <div style="width: 100%;height: 100px;"></div>
+
+                <!--好社保相关问题-->
+                <div class="haoshebao_question" v-if="num===0">
+                    <Collapse v-model="haoshebao.value" simple accordion>
+                        <Panel :name="index+''" v-for="item,index in haoshebao.lists">
+                            {{item.name}}
+                            <p slot="content">
+                                {{item.p}}
+                            </p>
+                        </Panel>
+                    </Collapse>
+
+                </div>
+
+                <!--社保相关问题-->
+                <div class="shebao_question" v-if="num===1">
+                    <Collapse v-model="shebao.value" simple accordion>
+                        <Panel :name="index+''" v-for="item,index in shebao.lists">
+                            {{item.name}}
+                            <p slot="content" v-html="item.p"></p>
+                        </Panel>
+                    </Collapse>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</template>
+
+<script>
+    import baseHeader from '../../components/baseHeader'
+
+    export default {
+        name: "question",
+        data() {
+            return {
+                num: 0,
+                value: 1,
+                haoshebao: {
+                    value: '0',
+                    lists: [
+                        {
+                            name: 'Q：如何查看是否参保成功？',
+                            p: 'A：两个工作日后，如果参保人状态为“正常缴纳”，请登录当地社保局官网查询参保人社保状态。'
+                        },
+                        {
+                            name: 'Q：什么情况下可以退款？',
+                            p: 'A：以下三种情形可申请退款，一、参保人参保不成功；二、参保人主动提出退款且平台尚未进行操作；三、参保人提前减员。'
+                        },
+                        {
+                            name: 'Q：哪些费用可以退？',
+                            p: 'A：如您办理退款，平台可退还您的代缴费用、服务费不予退还，另，支付时收取的手续费为支付厂商收取，与平台无关，故不予退还。'
+                        },
+                        {
+                            name: 'Q：如何办理减员？',
+                            p: 'A：如需提前办理减员，请先关注微信公众号“好社保”，在公众号底部「缴社保」中点击「我要减员」，根据提示进行操作（增减员一般需要两个工作日）。我们正在不断完善平台功能，更多功能请关注后期版本更新。'
+                        },
+                        {
+                            name: 'Q：能否开具在职证明、开具劳动合同，能否办理申领社保卡、手工报销、领取生育津贴、办理社保转移办理退休等业务？',
+                            p: 'A：因平台为代缴性质，仅提供社保代缴服务，无法办理相关业务，可联系在线客服或拨打客服电话进行咨询。\n'
+                        },
+                        {
+                            name: 'Q：为什么不能选择缴纳月份？',
+                            p: 'A：目前平台仅支持当地最近参保月的购买，暂不支持参保月份选择，请根据平台截止时间规则进行购买。\n'
+                        },
+                        {
+                            name: 'Q：怎样一次购买多个月的社保？',
+                            p: 'A：您可以选择同一订单多次下单的方式。缴费成功后剩余的金额系统会根据当前缴纳截止月份为您自动后延。'
+                        },
+                        {
+                            name: 'Q：好社保可以缴纳公积金吗？',
+                            p: 'A：好社保目前暂时不支持公积金购买，我们的功能正在完善中，请您关注后期版本更新。'
+                        },
+                    ]
+
+                },
+                shebao: {
+                    value: '0',
+                    lists: [
+                        {
+                            name: 'Q：社保断缴有什么影响？',
+                            p: 'A：断缴期间，停止享受社保待遇。一般在买房、买车、小孩上学等方面会受到影响。具体还需要参考当地政策。'
+                        },
+                        {
+                            name: 'Q：社保转移是必须的吗？',
+                            p: 'A：不是。社保是否转移与新参保地能否参加社保没有关系，当不确定是否回原参保地或者不确定是否在新参保地退休时，可以暂不办理社保转移手续，待确定退休待遇领取地后，再统一办理社保转移。\n'
+                        },
+                        {
+                            name: 'Q：社保缴满15年可以停缴吗？',
+                            p: 'A：1.养老保险必须缴满规定的最低缴费年限15年，到退休年龄(男60周岁/女55周岁)，就可以享受养老金待遇(延迟退休除外)。\n' +
+                            '2.如果有单位，即使缴满15年，但职工还未退休，企业还得继续缴费，直至退休;个人缴纳社保的话，可停缴，也可继续缴纳。根据当地政策，肯定也继续缴纳好，养老保险是遵循“多缴多得”的原则，缴费基数越高、年限越长，退休时领取养老金也越多。因此在这里给出的结论是，最好不要停交。如果你交满15年以后不继续缴纳了，你缴费年限只有15年，也就是你只能领取最低的养老金标准，所以，如果在你交满养老保险15年以后不继续缴纳，并不是最“有利”的行为。'
+                        },
+                        {
+                            name: 'Q：交满15年社保能领多少钱?',
+                            p: 'A：   交满15年社保退休能领多少钱的计算公式：养老金=基础养老金+个人账户养老金;其中：基础养老金=(全省上年度在岗职工月平均工资+本人指数化月平均缴费工资)÷2×缴费年限×1%。月基本养老金=基础养老金+个人账户养老金+过渡性养老金;过渡性养老金=退休时上年度全省在岗职工月平均工资×本人平均缴费工资指数×1997年12月31日以前的缴费年限\\(含视同缴费年限\\)×1.4%。\n'
+                        },
+                        {
+                            name: 'Q：社保交满15年后停交还能享受医保吗?',
+                            p: 'A：医疗保险至少需要交纳25/30年，达到退休年龄才可以申请享受终身医疗保险(只要续费平时也是可以的)。在此期间内医保停缴，是无法享受医疗保险的社保的。如果你的医保不满25/30年，你退休后还可以继续缴满。有的地方政策还有特殊规定，如深圳社保政府就规定：养老保险可以补交，而医疗保险则视为中断，不能补交，先前连续交的全部医疗保险清零。所以说，医疗保险还是建议一定要坚持缴纳，因为补办也很麻烦。再说，退休后累计缴费年限，不足部分退休前要一起交齐。我们假设您二十五年后退休，那是您的工资和收入肯定比现在高很多，但是补交要按退休前一年为基数的所缴费更多，甚至有的地方还要补滞纳金，所以建议最好不要停交。'
+                        },
+                        {
+                            name: 'Q：个人缴纳社保可以只缴纳医保吗？或者是分开缴纳？',
+                            p: 'A：不可以。社保是五险一起缴纳的，无论是您自己缴纳还是由单位缴纳都是不允许单独缴纳其中的某个险种。\n'
+                        },
+                        {
+                            name: 'Q：参加城乡居民养老保险还是企业职工养老保险',
+                            p: 'A：企业职工应当依法参加企业职工养老保险，因此，参加了城乡居民养老保险的企业职工也要参加企业职工养老保险。同时参加企业职工养老保险和城乡居民养老保险的，其重复缴费时段（按月计算）只计算企业职工养老保险缴费年限，并将城乡居民养老保险重复缴费时段相应个人缴费和集体补助退还本人。'
+                        },
+                        {
+                            name: 'Q：什么是基本养老保险视同缴费年限？',
+                            p: 'A:基本养老保险视同缴费年限为当地实行养老保险个人缴费制度时仍在国有或者县以上集体所有制单位的固定职工，其在当地实行养老保险个人缴费制度前按国家规定计算的连续工龄。当地实行养老保险个人缴费制度后，未向当地社保机构缴纳养老保险费的固定职工，未缴费期间不计算为基本养老保险视同缴费年限。基本养老保险视同缴费年限，由市社保机构依据原固定职工本人档案记载、相关文件规定的应缴费起始时间以及转出地社保机构做出的记载等予以确认。'
+                        },
+                        {
+                            name: 'Q：参加医保后能享受哪些待遇？',
+                            p: 'A：办理了参保手续并及时足额缴费后，参保人员凭医疗保险证（卡）即可在定点医院、定点药店就医、购药。因住院、患有特殊门诊病而产生的治疗费用，可以按照规定的范围、比例和额度由统筹基金支付。'
+
+                        },
+                    ]
+
+                },
+                title: [
+                    {
+                        name: '服务相关问题'
+                    },
+                    {
+                        name: '社保相关问题'
+
+                    }
+                ]
+            }
+        },
+        components: {baseHeader},
+        methods: {
+            changeTag(index) {
+                this.num = index;
+            },
+            colseIt() {
+                this.$store.commit("modalFun", "hide");
+            },
+            doIt() {
+                this.$store.commit("modalFun", "show");
+            },
+            zixun() {
+                this.$store.commit("iframeFun", "show");
+            },
+        }
+    }
+</script>
+
+<style scoped type="text/less" lang="less">
+    .question {
+        .question_banner {
+            width: 100%;
+            height: 450px;
+            border: 1px solid transparent;
+            box-sizing: border-box;
+            background: url("../../../assets/images/question_banner.png") no-repeat center top;
+            h3 {
+                width: 58px;
+                height: 25px;
+                font-size: 26px;
+                letter-spacing: 0px;
+                color: #ffffff;
+                margin: 175px auto 0;
+            }
+            .line_height {
+                width: 37px;
+                height: 4px;
+                background-color: #ffffff;
+                margin: 23px auto 0;
+            }
+            h4 {
+                width: 100%;
+                height: 26px;
+                font-size: 26px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #ffffff;
+                margin: 23px auto 0;
+                text-align: center;
+            }
+
+        }
+        .question_content {
+            border: 1px solid transparent;
+            box-sizing: border-box;
+            width: 1000px;
+            .question_content_r {
+                width: 900px !important;
+                margin: 0 auto;
+            }
+            ul {
+                width: 360px;
+                margin: 0 auto;
+                margin-top: 60px;
+                margin-bottom: 60px;
+                li {
+                    float: left;
+                    &:first-child {
+                        width: 180px;
+                        text-align: center;
+                        a {
+                            display: block;
+                            box-sizing: border-box;
+                            height: 17px;
+                            font-size: 18px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            letter-spacing: 0px;
+                            color: #999999;
+
+                            &:hover {
+                                color: #f73143;
+                            }
+
+                            &:after {
+                                content: '';
+                                display: block;
+                                width: 0;
+                                margin: 7px auto 0;
+                                height: 2px;
+                                background: transparent;
+                                transition: all .3s;
+
+                            }
+                            &:hover:after {
+                                color: #f73143;
+                                width: 40px;
+                                background: #f73143;
+                            }
+                        }
+
+                    }
+                    &:last-child {
+                        width: 160px;
+                        text-align: center;
+                        a {
+                            display: block;
+                            box-sizing: border-box;
+                            height: 17px;
+                            font-size: 18px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            letter-spacing: 0px;
+                            color: #999999;
+
+                            &:hover {
+                                color: #f73143;
+                            }
+
+                            &:after {
+                                content: '';
+                                display: block;
+                                width: 0;
+                                margin: 7px auto 0;
+                                height: 2px;
+                                background: transparent;
+                                transition: all .3s;
+
+                            }
+                            &:hover:after {
+                                color: #f73143;
+                                width: 40px;
+                                background: #f73143;
+                            }
+                        }
+                    }
+                }
+
+                .active_question {
+                    a {
+                        display: block;
+                        box-sizing: border-box;
+                        height: 17px;
+                        font-size: 18px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        letter-spacing: 0px;
+                        color: #f73143 !important;
+                        &:after {
+                            content: '';
+                            display: block;
+                            width: 40px !important;
+                            margin: 7px auto 0 !important;
+                            height: 2px !important;
+                            background: #f73143 !important;
+                            transition: all .3s;
+
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+        .fix_conents {
+            position: fixed;
+            bottom: 200px;
+            right: 50px;
+            li {
+                width: 46px;
+                height: 46px;
+                border-top: 1px solid transparent;
+                a {
+                    display: block;
+                    width: 46px;
+                    height: 46px;
+                    background: #fa6f7b;
+                    text-align: center;
+                    line-height: 45px;
+                    color: #fff;
+                    border-radius: 3px;
+                    i {
+                        font-size: 30px;
+                        font-weight: 500;
+                    }
+
+                }
+                &:nth-child(1) {
+                    border: none;
+                }
+                &:nth-child(1) a {
+                    /*background: url("../../assets/images/speck@2x.png") no-repeat center;*/
+                    /*-webkit-background-size: 100% 100%;*/
+                    /*background-size: 100% 100%;*/
+                    text-align: center;
+                    line-height: 46px;
+                    font-size: 30px;
+                    color: #fff;
+                }
+                &:nth-child(2) a {
+                    /*background: url("../../assets/images/erweima_speak@2x.png") no-repeat center;*/
+                    /*-webkit-background-size: 100% 100%;*/
+                    /*background-size: 100% 100%;*/
+
+                }
+
+            }
+
+            .back_top a {
+                /*background: url("../../assets/images/back@2x.png") no-repeat center !important;*/
+                /*-webkit-background-size: 100% 100% !important;*/
+                /*background-size: 100% 100% !important;*/
+                display: block;
+                width: 46px;
+                height: 46px;
+                background: #fa6f7b;
+                text-align: center;
+                line-height: 45px;
+                color: #fff;
+                border-radius: 3px;
+                i {
+                    font-size: 30px;
+                    font-weight: 500;
+                    position: relative;
+                    left: -5px;
+                }
+
+            }
+        }
+
+        .iframe_wrap {
+            position: fixed;
+            right: 60px;
+            bottom: -1000px;
+            width: 320px;
+            height: 480px;
+            transition: all .3s;
+            box-shadow: 2px 3px 24px 0px rgba(96, 96, 96, 0.11);
+            z-index: 666;
+            .iframe_wrap_del {
+                display: block;
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                background: transparent;
+                right: -22px;
+                top: -28px;
+                font-size: 30px;
+                color: #fff;
+                text-align: center;
+                line-height: 50px;
+                border-radius: 50%;
+                cursor: pointer;
+                i {
+                    background: rgb(48, 122, 232);
+                    border-radius: 50%;
+                    color: #ffffff;
+                    font-weight: 600;
+                }
+
+            }
+        }
+
+        .iframe_active {
+            bottom: 10px;
+        }
+
+        .erweima_modal {
+            width: 165px;
+            height: 165px;
+            margin: 0 auto;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .erweima_modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .3);
+            z-index: 1000;
+
+        }
+
+        .erweima_modal_content {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 400px;
+            height: 260px;
+            border-radius: 5px;
+            z-index: 1001;
+            background: url("../../../assets/images/modal_bg.png") no-repeat center top;
+            .erweima_modal_del {
+                position: absolute;
+                cursor: pointer;
+                right: 20px;
+                top: 20px;
+                width: 14px;
+                height: 14px;
+
+                background: url("../../../assets/images/modal_del.png") no-repeat center top;
+                -webkit-background-size: 100% 100%;
+                background-size: 100% 100%;
+            }
+
+            .erweima_wrap {
+                width: 150px;
+                height: 150px;
+                margin: 40px auto 10px;
+                transition: all 0.3s;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            p {
+                width: 100%;
+                height: 22px;
+                line-height: 22px;
+                text-align: center;
+                font-size: 14px;
+                color: #fff;
+            }
+        }
+
+    }
+
+
+</style>
+
+
+
+// WEBPACK FOOTER //
+// src/views/pc/question/index.vue
