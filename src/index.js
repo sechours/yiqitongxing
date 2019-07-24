@@ -4,7 +4,8 @@
 // import Button from './components/BasePcComponents/button';
 import Carousel from './components/carousel/carousel.vue';
 import CarouselItem from './components/carousel/carousel-item.vue';
-// import Collapse from './components/BasePcComponents/collapse';
+import Collapse from './components/collapse/collapse.vue';
+import Panel from './components/collapse/panel.vue';
 // import Content from './components/BasePcComponents/content';
 // import Dropdown from './components/BasePcComponents/dropdown';
 // import Form from './components/BasePcComponents/form';
@@ -61,7 +62,9 @@ const components = {
     Carousel,
     Row,
     CarouselItem,
-    baseHeader
+    baseHeader,
+    Collapse,
+    Panel
 };
 
 const UI = {

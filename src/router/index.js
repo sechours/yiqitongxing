@@ -6,7 +6,7 @@ import Main from '@/views/index'
 import Home from '@/views/pc/index'
 // import About from '@/views/pc/about'
 // import Counter from '@/views/pc/counter'
-// import Question from '@/views/pc/question'
+import Question from '../views/pc/question/index.vue'
 // import Insurance from '@/views/pc/insurance'
 
 
@@ -40,11 +40,11 @@ export default new Router({
                 //     name: 'counter',
                 //     component: Counter
                 // },
-                // {
-                //     path: 'question',
-                //     name: "question",
-                //     component: Question
-                // },
+                {
+                    path: 'question',
+                    name: "question",
+                    component: Question
+                },
                 // //保险大厅落地页
                 // {
                 //     path: 'insurance',

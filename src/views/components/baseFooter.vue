@@ -8,9 +8,9 @@
                     </div>
                     <div class="footer_phone">
                         <span class="footer_phone1">18550824801</span>
-                        <span class="footer_phone2">010-57431047</span>
+                        <span class="footer_phone2">18556762661</span>
                     </div>
-                    <p> hancr0407@163.com &nbsp;&nbsp; 周一至周五：9:00— 18:00</p>
+                    <p> hancr0407@163.com &nbsp;&nbsp; 周一至周日：9:00— 22:00</p>
                 </div>
                 <div class="base_footer_content_top_right">
                     <div class="footer_erweima footer_erweima1">
