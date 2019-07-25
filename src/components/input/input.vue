@@ -67,9 +67,9 @@
     </div>
 </template>
 <script>
-    import { oneOf, findComponentUpward } from '../../../utils/assist';
-    import calcTextareaHeight from '../../../utils/calcTextareaHeight';
-    import Emitter from '../../../mixins/emitter';
+    import { oneOf, findComponentUpward } from '../../utils/assist.js';
+    import calcTextareaHeight from '../../utils/calcTextareaHeight.js';
+    import Emitter from '../../mixins/emitter.js';
 
     const prefixCls = 'ivu-input';
 

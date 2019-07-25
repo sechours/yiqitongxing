@@ -8,10 +8,11 @@ import Collapse from './components/collapse/collapse.vue';
 import Panel from './components/collapse/panel.vue';
 // import Content from './components/BasePcComponents/content';
 // import Dropdown from './components/BasePcComponents/dropdown';
-// import Form from './components/BasePcComponents/form';
+import Form from './components/form/form.vue';
+import FormItem from './components/form/form-item.vue';
 // import Icon from './components/BasePcComponents/icon';
-// import Input from './components/BasePcComponents/input';
-// import InputNumber from './components/BasePcComponents/input-number';
+import Input from './components/input/input.vue';
+import InputNumber from './components/input/input-number.vue';
 // import LoadingBar from './components/BasePcComponents/loading-bar';
 // import Message from './components/BasePcComponents/message';
 // import Modal from './components/BasePcComponents/modal';
@@ -23,6 +24,9 @@ import Panel from './components/collapse/panel.vue';
 import Col from './components/grid/col.vue';
 import Row from './components/grid/row.vue';
 import baseHeader from '../src/views/components/baseHeader.vue'
+import Select from './components/select/select.vue';
+import Option from './components/select/option.vue';
+import OptionGroup from './components/select/option-group.vue';
 // import {Select, Option, OptionGroup} from './components/BasePcComponents/select';
 
 
@@ -64,7 +68,14 @@ const components = {
     CarouselItem,
     baseHeader,
     Collapse,
-    Panel
+    Panel,
+    Form,
+    FormItem,
+    Input,
+    InputNumber,
+    Select,
+    Option,
+    OptionGroup
 };
 
 const UI = {

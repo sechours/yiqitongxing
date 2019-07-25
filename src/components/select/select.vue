@@ -73,10 +73,10 @@
 <script>
     import Drop from './dropdown.vue';
     import {directive as clickOutside} from 'v-click-outside-x';
-    import TransferDom from '../../../directives/transfer-dom';
-    import { oneOf } from '../../../utils/assist';
-    import Emitter from '../../../mixins/emitter';
-    import Locale from '../../../mixins/locale';
+    import TransferDom from '../../directives/transfer-dom.js';
+    import { oneOf } from '../../utils/assist.js';
+    import Emitter from '../../mixins/emitter.js';
+    import Locale from '../../mixins/locale.js';
     import SelectHead from './select-head.vue';
     import FunctionalOptions from './functional-options.vue';
 

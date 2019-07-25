@@ -36,8 +36,8 @@
     </div>
 </template>
 <script>
-    import { oneOf } from '../../../utils/assist';
-    import Emitter from '../../../mixins/emitter';
+    import { oneOf } from '../../utils/assist.js';
+    import Emitter from '../../mixins/emitter.js';
 
     const prefixCls = 'ivu-input-number';
     const iconPrefixCls = 'ivu-icon';

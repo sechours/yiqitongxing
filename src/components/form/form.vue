@@ -3,7 +3,7 @@
 </template>
 <script>
     // https://github.com/ElemeFE/element/blob/dev/packages/form/src/form.vue
-    import { oneOf } from '../../../utils/assist';
+    import { oneOf } from '../../utils/assist.js';
 
     const prefixCls = 'ivu-form';
 

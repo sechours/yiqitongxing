@@ -204,7 +204,7 @@
                     <span>LABOR DISPUTE</span>
                     <p>员工离职</p>
                     <p>社保出处理不当就会产生劳动纠纷</p>
-                    <p>快推荐他用“好社保”</p>
+                    <p>快推荐他用“苏易保”</p>
                     <p>安全、可靠、不怕断缴</p>
 
                 </div>
@@ -216,7 +216,7 @@
 
         </div>
         <div class="insurance_service">
-            <h3>“好社保”专注为个体自由职业者提供社保服务</h3>
+            <h3>“苏易保”专注为个体自由职业者提供社保服务</h3>
             <div class="insurance_service_lists">
                 <div class="insurance_service_item">
                     <h4>专业社保咨询顾问</h4>

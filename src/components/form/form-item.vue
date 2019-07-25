@@ -11,7 +11,7 @@
 </template>
 <script>
     import AsyncValidator from 'async-validator';
-    import Emitter from '../../../mixins/emitter';
+    import Emitter from '../../mixins/emitter.js';
 
     const prefixCls = 'ivu-form-item';
 

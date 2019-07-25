@@ -30,9 +30,9 @@
     </div>
 </template>
 <script>
-    import Icon from '../icon';
-    import Emitter from '../../../mixins/emitter';
-    import Locale from '../../../mixins/locale';
+    import Icon from '../icon/icon.vue';
+    import Emitter from '../../mixins/emitter.js';
+    import Locale from '../../mixins/locale.js';
 
     const prefixCls = 'ivu-select';
 

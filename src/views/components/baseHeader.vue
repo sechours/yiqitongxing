@@ -2,8 +2,8 @@
     <div>
         <div id="header">
             <div class="header_content">
-                <div class="header_content_logo" style="cursor:pointer;">
-                    <img @click="goHeader" src="../../assets/images/logo.png" alt="好社保">
+                <div class="header_content_logo" style="cursor:pointer;" @click="goHeader">
+                    <img  src="../../assets/images/logo.png" alt="苏易保">
                     <span class="suyibao">苏易保</span>
                 </div>
                 <div class="header_content_phone">

@@ -3,7 +3,7 @@
         <div id="header2">
             <div class="header_content">
                 <div class="header_content_logo" style="cursor:pointer;">
-                    <img @click="backHeader" src="../../assets/images/logo.png" alt="好社保">
+                    <img @click="backHeader" src="../../assets/images/logo.png" alt="苏易保">
                 </div>
                 <div class="header_content_phone">
                     <div class="phone_img">

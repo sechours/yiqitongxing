@@ -3,12 +3,12 @@
  * @type {string}
  */
 
-let baseUrl = '/api';
+let baseUrl = '/suyibao/api';
 // let appkey = 'uDwn9JicCCsKOBVTuDemRfF8';
 let appkey = 'Q5ayPGYzT065SbH8Geo8IMhf';
 // const appkey = 'uDwn9JicCCsKOBVTuDemRfF8';
 
-//let NODE_ENV = process.env.NODE_ENV || 'production';
+// let NODE_ENV = process.env.NODE_ENV || 'production';
 
 //
 // if(NODE_ENV === 'production'){//生产环境
@@ -29,9 +29,3 @@ export default {
     content: 'https://shebaomeng.udesk.cn/im_client/?web_plugin_id=36110&group_id=56460&channel=%E5%BE%AE%E4%BF%A1'
 
 }
-
-
-
-
-// WEBPACK FOOTER //
-// ./src/apiport/index.js

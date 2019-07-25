@@ -46,8 +46,3 @@
         }
     };
 </script>
-
-
-
-// WEBPACK FOOTER //
-// src/components/BasePcComponents/select/option-group.vue
