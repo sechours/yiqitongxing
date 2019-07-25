@@ -138,11 +138,8 @@
 </template>
 
 <script>
-    import baseHeader from '../../components/baseHeader'
-
     export default {
         name: "about",
-        components: {baseHeader},
         methods: {
             colseIt() {
                 this.$store.commit("modalFun", "hide");
@@ -165,7 +162,7 @@
             min-width: 1200px;
             border: 1px solid transparent;
             box-sizing: border-box;
-            background: url("../../../assets/images/about/banner.png") no-repeat center top;
+            background: url("./../../../assets/images/banner.png") no-repeat center top;
             h3 {
                 width: 100%;
                 height: 25px;
@@ -213,10 +210,10 @@
                         text-align: left;
                         padding-left: 100px;
                         box-sizing: border-box;
-                        background: url("../../../assets/images/about/point.png") no-repeat 70px center;
+                        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAd0lEQVQYlYXPsQnCABCF4S/X6Qw6RFrb6BKKawTrNOocIg5hny2sxBUSsLLwrIzxbw4eP493RV9WMMEOG8xxxxkH9EVfVlNcsfBNi1Vkw5Ag8zqw/iF82EZuGGMWOXKMR+DyRzoF9t5fDNHiGOiwRIMbnnmbzLsXzooXHZ6LDj0AAAAASUVORK5CYII=) no-repeat 70px;
                     }
                     .about_content_item_left_h4 {
-                        background: url("../../../assets/images/about/point.png") no-repeat 70px 135px;
+                        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAd0lEQVQYlYXPsQnCABCF4S/X6Qw6RFrb6BKKawTrNOocIg5hny2sxBUSsLLwrIzxbw4eP493RV9WMMEOG8xxxxkH9EVfVlNcsfBNi1Vkw5Ag8zqw/iF82EZuGGMWOXKMR+DyRzoF9t5fDNHiGOiwRIMbnnmbzLsXzooXHZ6LDj0AAAAASUVORK5CYII=) no-repeat 70px 135px;
                     }
 
                 }
@@ -308,7 +305,7 @@
                 left: -17px;
                 width: 271px;
                 height: 250px;
-                background: url("../../../assets/images/about/about_01.png") no-repeat 0 center;
+                background: url("../../../assets/images/about_01.png") no-repeat 0 center;
                 -webkit-background-size: 100% 100%;
                 background-size: 100% 100%;
                 &:hover {
@@ -321,7 +318,7 @@
                 left: -20px;
                 width: 269px;
                 height: 250px;
-                background: url("../../../assets/images/about/about_02.png") no-repeat 0 center;
+                background: url("../../../assets/images/about_02.png") no-repeat 0 center;
                 -webkit-background-size: 100% 100%;
                 background-size: 100% 100%;
                 &:hover {
@@ -336,7 +333,7 @@
                 width: 263px;
                 height: 248px;
                 z-index: 10;
-                background: url("../../../assets/images/about/about_03.png") no-repeat 0 center;
+                background: url("../../../assets/images/about_04.png") no-repeat 0 center;
                 -webkit-background-size: 100% 100%;
                 background-size: 100% 100%;
                 &:hover {
@@ -351,7 +348,7 @@
                 width: 261px;
                 height: 248px;
                 z-index: 10;
-                background: url("../../../assets/images/about/about_04.png") no-repeat center;
+                background: url("../../../assets/images/about_03.png") no-repeat center;
                 -webkit-background-size: 100% 100%;
                 background-size: 100% 100%;
                 &:hover {
@@ -391,27 +388,18 @@
                 border: none;
             }
             &:nth-child(1) a {
-                /*background: url("../../assets/images/speck@2x.png") no-repeat center;*/
-                /*-webkit-background-size: 100% 100%;*/
-                /*background-size: 100% 100%;*/
                 text-align: center;
                 line-height: 46px;
                 font-size: 30px;
                 color: #fff;
             }
             &:nth-child(2) a {
-                /*background: url("../../assets/images/erweima_speak@2x.png") no-repeat center;*/
-                /*-webkit-background-size: 100% 100%;*/
-                /*background-size: 100% 100%;*/
 
             }
 
         }
 
         .back_top a {
-            /*background: url("../../assets/images/back@2x.png") no-repeat center !important;*/
-            /*-webkit-background-size: 100% 100% !important;*/
-            /*background-size: 100% 100% !important;*/
             display: block;
             width: 46px;
             height: 46px;
@@ -500,7 +488,7 @@
         height: 260px;
         border-radius: 5px;
         z-index: 1001;
-        background: url("../../../assets/images/modal_bg.png") no-repeat center top;
+        // background: url("../../../assets/images/modal_bg.png") no-repeat center top;
         .erweima_modal_del {
             position: absolute;
             cursor: pointer;
@@ -508,7 +496,7 @@
             top: 20px;
             width: 14px;
             height: 14px;
-            background: url("../../../assets/images/modal_del.png") no-repeat center top;
+            // background: url("../../../assets/images/modal_del.png") no-repeat center top;
             -webkit-background-size: 100% 100%;
             background-size: 100% 100%;
         }
@@ -536,8 +524,3 @@
 
 
 </style>
-
-
-
-// WEBPACK FOOTER //
-// src/views/pc/about/index.vue

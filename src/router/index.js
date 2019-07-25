@@ -4,8 +4,8 @@ import Router from 'vue-router'
 
 import Main from '@/views/index'
 import Home from '@/views/pc/index'
-// import About from '@/views/pc/about'
-// import Counter from '@/views/pc/counter'
+import About from '../views/pc/about/index.vue'
+import Counter from '../views/pc/counter/index'
 import Question from '../views/pc/question/index.vue'
 // import Insurance from '@/views/pc/insurance'
 
@@ -29,17 +29,16 @@ export default new Router({
                     name: 'index',
                     component: Home
                 },
-
-                // {
-                //     path: 'about',
-                //     name: 'about',
-                //     component: About
-                // },
-                // {
-                //     path: 'counter',
-                //     name: 'counter',
-                //     component: Counter
-                // },
+                {
+                    path: 'about',
+                    name: 'about',
+                    component: About
+                },
+                {
+                    path: 'counter',
+                    name: 'counter',
+                    component: Counter
+                },
                 {
                     path: 'question',
                     name: "question",

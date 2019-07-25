@@ -7,21 +7,21 @@
         <div :class="contentClasses" v-show="isActive">
                 <div :class="boxClasses"><slot name="content"></slot></div>
             </div>
-        <!-- <collapse-transition>
+        <collapse-transition>
             <div :class="contentClasses" v-show="isActive">
                 <div :class="boxClasses"><slot name="content"></slot></div>
             </div>
-        </collapse-transition> -->
+        </collapse-transition>
     </div>
 </template>
 <script>
     import Icon from '../icon/icon.vue';
-    // import CollapseTransition from '../base/collapse-transition';
+    import CollapseTransition from '../collapse-transition/collapse-transition';
     const prefixCls = 'ivu-collapse';
 
     export default {
         name: 'Panel',
-        components: { Icon },
+        components: { Icon ,CollapseTransition},
         props: {
             name: {
                 type: String
