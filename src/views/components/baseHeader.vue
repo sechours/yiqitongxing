@@ -14,6 +14,7 @@
                 <div class="header_content_nav_lists">
                     <router-link to="/index" tag="a">首页</router-link>
                     <router-link to="/counter" tag="a">五险一金计算器</router-link>
+                    <router-link to="/insurance" tag="a">代缴社保</router-link>
                     <router-link to="/about" tag="a">关于我们</router-link>
                     <router-link to="/question" tag="a">常见问题</router-link>
                 </div>
@@ -49,7 +50,7 @@
         box-shadow: 2px 3px 24px 0px rgba(96, 96, 96, 0.11);
         z-index:100;
         .header_content {
-            width: 1000px;
+            width: 1100px;
             margin: 0 auto;
             background: #ffffff;
             .header_content_logo {
@@ -74,7 +75,7 @@
 
             }
             .header_content_nav_lists {
-                width: 500px;
+                width: 600px;
                 float: right;
                 text-align: right;
                 height: 100px;
@@ -88,7 +89,7 @@
                     font-size: 18px;
                     letter-spacing: 0px;
                     color: #333333;
-                    margin: 0 15px 0 15px;
+                    margin: 0 15px 0 10px;
                     display: inline-block;
                     text-decoration: none;
                     text-align: center;

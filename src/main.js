@@ -1,17 +1,3 @@
-
-// import Vue from 'vue'
-// import App from './App'
-// import router from './router'
-// Vue.config.productionTip = false
-// new Vue({
-//   el: '#app',
-//   router,
-//   components: { App },
-//   template: '<App/>'
-// })
-
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
 import router from './router/index'
@@ -19,6 +5,8 @@ import axios from './axios'
 import store from './store/index'
 import commonComponents from './index.js'
 import apiport from './apiport/index'
+import MetaInfo from 'vue-meta-info'
+
 import './assets/index.css'
 
 import 'babel-polyfill'
@@ -31,7 +19,7 @@ window['getUrl'] = () => {
     return apiport;
 }
 
-
+Vue.use(MetaInfo);
 Vue.use(commonComponents);
 Vue.config.productionTip = false
 Vue.prototype.$http = axios;
@@ -79,7 +67,8 @@ new Vue({
     template: '<App/>',
     watch: {
         "$route": "fetchDate"
-    }
-
-
+    },
+    mounted () {
+        document.dispatchEvent(new Event('render-event'))
+      }
 });

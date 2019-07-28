@@ -7,10 +7,10 @@ import Home from '@/views/pc/index'
 import About from '../views/pc/about/index.vue'
 import Counter from '../views/pc/counter/index'
 import Question from '../views/pc/question/index.vue'
-// import Insurance from '@/views/pc/insurance'
+import Insurance from '../views/pc/insurance/index.vue'
 
 
-// import NotFind from '@/views/components/base404.vue'
+import NotFind from '../views/components/base404.vue'
 
 
 Vue.use(Router)
@@ -45,18 +45,18 @@ export default new Router({
                     component: Question
                 },
                 // //保险大厅落地页
-                // {
-                //     path: 'insurance',
-                //     name: 'insurance',
-                //     component: Insurance
-                // },
+                {
+                    path: 'insurance',
+                    name: 'insurance',
+                    component: Insurance
+                },
             ],
         },
-        // {
-        //     path: '*',
-        //     component: NotFind,
-        //     name: 404
-        // }
+        {
+            path: '*',
+            component: NotFind,
+            name: 404
+        }
     ]
 })
 

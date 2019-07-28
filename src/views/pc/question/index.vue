@@ -143,6 +143,17 @@
         ]
       }
     },
+    metaInfo: {
+      title: '苏易保|苏易保社保代缴|社保代缴|苏州市社保代缴|在线社保代缴平台', // set a title
+      meta: [{                 // set meta
+        name: 'description',
+        content: '苏易保社保是中国互联网社保开创者,致力于为企业提供社保,综合保障,薪酬,残保金等综合解决方案.依托更透明,更高效,更放心的苏易保全直营服务体系,帮助广大企业控制用工风险,降低人工成本,提升员工福利'
+      },
+      {                 // set meta
+        name: 'keywords',
+        content: '苏易保,代缴社保,社保代缴,昆山社保代缴,苏州工业园区社保代缴、苏州社保代缴、苏州市区社保代缴'
+      }],
+    },
     methods: {
       changeTag(index) {
         this.num = index;

@@ -49,6 +49,7 @@
                 <div class="footer_nav">
                     <router-link to="/index" tag="a">首页</router-link>
                     <router-link to="/counter" tag="a">五险一金计算器</router-link>
+                    <router-link to="/insurance" tag="a">代缴社保</router-link>
                     <router-link to="/about" tag="a">关于我们</router-link>
                     <router-link to="/question" tag="a">常见问题</router-link>
                 </div>
@@ -227,7 +228,7 @@
                 }
 
                 .footer_nav{
-                    width: 280px;
+                    width: 317px;
                     height: 14px;
                     font-family: MicrosoftYaHei;
                     font-size: 12px;

@@ -1,161 +1,180 @@
 <template>
-    <div class="about">
-        <base-header></base-header>
-        <div class="about_banner">
-            <h3>About Us</h3>
-            <div class="line_height"></div>
-            <h4>关于我们</h4>
-
-        </div>
-        <div class="about_content container">
-            <div class="about_content_item">
-                <div class="about_content_item_left">
-                    <h4>关于苏易保</h4>
-                </div>
-                <div class="about_content_item_right">
-                    <p>
-                        苏易保，专注于为个体、自由职业者提供专业、快捷、高效、安全的社保服务，
-                        是业内领先的互联网在线自助式缴纳平台，隶属于北京赢途企业管理咨询有限公司。
-                    </p>
-
-                </div>
-            </div>
-
-            <div class="about_content_item" style="border: none;">
-                <div class="about_content_item_left">
-                    <h4 class="about_content_item_left_h4" style="line-height: 280px;">直营放心，团队专业</h4>
-                </div>
-                <div class="about_content_item_right">
-                    <p>
-                        苏易保拥有国内优质互联网技术团队，将传统社保缴纳方式与移动互联网无
-                        缝结合。只需要关注“苏易保”微信公众号，
-                        即可在线自助进行个体社保缴纳、查询服务。我们依托全国直营服务体系，支
-                        持北上广深、杭州、苏州工业园区、苏州市区、昆山、张家港等全国多地社保缴纳，让您缴得更安心，
-                        用得更放心。同时，苏易保配备专业在线客服团队，能为您提供个体社保缴纳
-                        的深度咨询服务，解决您的后顾之忧。
-                    </p>
-
-                </div>
-            </div>
-
-        </div>
-
-
-        <div class="about_bottom container">
-            <Row>
-                <Col span="6">
-                    <div class="about_bottom_item ">
-                        <h3>我们的使命</h3>
-                        <p>让每一份职业都有保障</p>
-
-                    </div>
-                </Col>
-                <Col span="6">
-                    <div class="about_bottom_item about_bottom_item_active ">
-                        <div class="about_bottom_item_active1">
-                            <span style="width: 168px;margin-top:85px;">
-                                   社保是一份承载全民保障的事业，为己、为人都应尽力，实现健全保障的使命
-                           </span>
-                        </div>
-
-                    </div>
-                </Col>
-
-                <Col span="6">
-                    <div class="about_bottom_item">
-                        <h3 style="padding-left: 77px;">我们的价值观</h3>
-                        <p style="padding-left: 77px;">安全 专注 真诚</p>
-
-                    </div>
-                </Col>
-                <Col span="6">
-                    <div class="about_bottom_item about_bottom_item_active ">
-
-                        <div class="about_bottom_item_active2">
-                            <span style="width: 57px;margin-top:85px;">
-                                安全可靠
-                                专注创新
-                                真诚进取
-                            </span>
-                        </div>
-
-                    </div>
-                </Col>
-
-
-                <Col span="6">
-                    <div class="about_bottom_item about_bottom_item_active ">
-                        <div class="about_bottom_item_active3">
-                            <span style="width: 169px;margin-top:85px;">
-
-                                用“专业化”锻造竞争能力
-                                用“科技型”驱动领域变革
-                                用“云服务”赢得行业发展
-
-                             </span>
-                        </div>
-
-
-                    </div>
-                </Col>
-
-
-                <Col span="6">
-                    <div class="about_bottom_item ">
-                        <h3 style="padding-left: 48px;">我们的理念</h3>
-                        <p style="padding-left: 48px;">专业化、科技型、云服务</p>
-
-                    </div>
-                </Col>
-
-
-                <Col span="6">
-                    <div class="about_bottom_item about_bottom_item_active ">
-                        <div class="about_bottom_item_active4">
-                                <span style="width: 135px;margin-top:85px;">
-                                    致力于让复杂的社保问题更加简单化
-                                </span>
-                        </div>
-
-                    </div>
-                </Col>
-
-                <Col span="6">
-                    <div class="about_bottom_item">
-                        <h3 style="padding-left: 33px;">我们的愿景</h3>
-                        <p style="padding-left: 33px;">让复杂的社会保障变得更简单</p>
-
-                    </div>
-                </Col>
-
-
-            </Row>
-
-        </div>
-
+  <div class="about">
+    <base-header></base-header>
+    <div class="about_banner">
+      <h3>About Us</h3>
+      <div class="line_height"></div>
+      <h4>关于我们</h4>
 
     </div>
+    <div class="about_content container">
+      <div class="about_content_item">
+        <div class="about_content_item_left">
+          <h4>关于苏易保</h4>
+        </div>
+        <div class="about_content_item_right">
+          <p>
+            苏易保，专注于为个体、自由职业者提供专业、快捷、高效、安全的社保服务，
+            是业内领先的互联网在线自助式缴纳平台，隶属于苏州艺起同行数据服务有限公司。
+          </p>
+
+        </div>
+      </div>
+
+      <div class="about_content_item" style="border: none;">
+        <div class="about_content_item_left">
+          <h4 class="about_content_item_left_h4" style="line-height: 280px;">直营放心，团队专业</h4>
+        </div>
+        <div class="about_content_item_right">
+          <p>
+            苏易保拥有国内优质互联网技术团队，将传统社保缴纳方式与移动互联网无
+            缝结合。只需要关注“苏易保”微信公众号，
+            即可在线自助进行个体社保缴纳、查询服务。我们依托全国直营服务体系，支
+            持北上广深、杭州、苏州工业园区、苏州市区、昆山、张家港等全国多地社保缴纳，让您缴得更安心，
+            用得更放心。同时，苏易保配备专业在线客服团队，能为您提供个体社保缴纳
+            的深度咨询服务，解决您的后顾之忧。
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="about_bottom container">
+      <Row>
+        <Col span="6">
+        <div class="about_bottom_item ">
+          <h3>我们的使命</h3>
+          <p>让每一份职业都有保障</p>
+
+        </div>
+        </Col>
+        <Col span="6">
+        <div class="about_bottom_item about_bottom_item_active ">
+          <div class="about_bottom_item_active1">
+            <span style="width: 168px;margin-top:85px;">
+              社保是一份承载全民保障的事业，为己、为人都应尽力，实现健全保障的使命
+            </span>
+          </div>
+
+        </div>
+        </Col>
+
+        <Col span="6">
+        <div class="about_bottom_item">
+          <h3 style="padding-left: 77px;">我们的价值观</h3>
+          <p style="padding-left: 77px;">安全 专注 真诚</p>
+
+        </div>
+        </Col>
+        <Col span="6">
+        <div class="about_bottom_item about_bottom_item_active ">
+
+          <div class="about_bottom_item_active2">
+            <span style="width: 57px;margin-top:85px;">
+              安全可靠
+              专注创新
+              真诚进取
+            </span>
+          </div>
+
+        </div>
+        </Col>
+
+
+        <Col span="6">
+        <div class="about_bottom_item about_bottom_item_active ">
+          <div class="about_bottom_item_active3">
+            <span style="width: 169px;margin-top:85px;">
+
+              用“专业化”锻造竞争能力
+              用“科技型”驱动领域变革
+              用“云服务”赢得行业发展
+
+            </span>
+          </div>
+
+
+        </div>
+        </Col>
+
+
+        <Col span="6">
+        <div class="about_bottom_item ">
+          <h3 style="padding-left: 48px;">我们的理念</h3>
+          <p style="padding-left: 48px;">专业化、科技型、云服务</p>
+
+        </div>
+        </Col>
+
+
+        <Col span="6">
+        <div class="about_bottom_item about_bottom_item_active ">
+          <div class="about_bottom_item_active4">
+            <span style="width: 135px;margin-top:85px;">
+              致力于让复杂的社保问题更加简单化
+            </span>
+          </div>
+
+        </div>
+        </Col>
+
+        <Col span="6">
+        <div class="about_bottom_item">
+          <h3 style="padding-left: 33px;">我们的愿景</h3>
+          <p style="padding-left: 33px;">让复杂的社会保障变得更简单</p>
+
+        </div>
+        </Col>
+
+
+      </Row>
+
+    </div>
+
+
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "about",
-        methods: {
-            colseIt() {
-                this.$store.commit("modalFun", "hide");
-            },
-            doIt() {
-                this.$store.commit("modalFun", "show");
-            },
-            zixun() {
-                this.$store.commit("iframeFun", "show");
-            },
+  export default {
+    name: "about",
+    metaInfo: {
+      title: '苏易保|苏易保社保代缴|社保代缴|苏州市社保代缴|在线社保代缴平台', // set a title
+      meta: [{ // set meta
+          name: 'description',
+          content: '苏易保社保是中国互联网社保开创者,致力于为企业提供社保,综合保障,薪酬,残保金等综合解决方案.依托更透明,更高效,更放心的苏易保全直营服务体系,帮助广大企业控制用工风险,降低人工成本,提升员工福利'
+        },
+        { // set meta
+          name: 'keywords',
+          content: '苏易保,代缴社保,社保代缴,昆山社保代缴,苏州工业园区社保代缴、苏州社保代缴、苏州市区社保代缴'
         }
+      ],
+    },
+    data() {
+      return {}
+    },
+    mounted() {
+
+    },
+    methods: {
+      colseIt() {
+        this.$store.commit("modalFun", "hide");
+      },
+      doIt() {
+        this.$store.commit("modalFun", "show");
+      },
+      zixun() {
+        this.$store.commit("iframeFun", "show");
+      },
     }
+  }
+
 </script>
 
 <style scoped type="text/less" lang="less">
-    .about {
+  .about {
         .about_banner {
             width: 100%;
             height: 450px;

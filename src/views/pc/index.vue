@@ -1,432 +1,437 @@
 <template>
-    <div id="home">
-        <base-header></base-header>
-        <div class="index_banner">
-            <Carousel  loop autoplay>
-                <CarouselItem>
-                    <div class="demo-carousel demo-carousel1"></div>
-                </CarouselItem>
-                <CarouselItem>
-                    <div class="demo-carousel demo-carousel2"></div>
-                </CarouselItem>
-                <CarouselItem>
-                    <div class="demo-carousel demo-carousel3"></div>
-                </CarouselItem>
-            </Carousel>
+  <div id="home">
+    <base-header></base-header>
+    <div class="index_banner">
+      <Carousel loop autoplay>
+        <CarouselItem>
+          <div class="demo-carousel demo-carousel1"></div>
+        </CarouselItem>
+        <CarouselItem>
+          <div class="demo-carousel demo-carousel2"></div>
+        </CarouselItem>
+        <CarouselItem>
+          <div class="demo-carousel demo-carousel3"></div>
+        </CarouselItem>
+      </Carousel>
 
-        </div>
-        <div class="er_wei_ma container">
-            <div class="er_wei_ma_right">
-                <div class="fengge1">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAABBCAYAAACw0qYLAAACbklEQVRogcXZTYiNURzH8c9M11shKZoUpcSkiQVJmTQWU1hMobAQUqZMk0xpmDuzRWIhRaFI2bDwklKUhdSsKCWlSFGTBUryUt4Xp6s701zzvD+/5TnPef7f+733nHue5zSNjIwoKfNxtrms6ujHcKWk4i3YgtayDPThAj6VYWA2dqINyjCwH1fwAYo2MAN7sbLWULSBHtzE21pDkQamoRft9Y1FGujGPbyubyzKwGRh6nWO7SjKwC4M48XYjiIMVIRld/N4nUUY2IZneDpeZ94GmjEorHwNL8gzm/AGjxpdkKeBJlRx4H8X5WlgA77gYVkAVRyZ6KK8ADowBXfLAhgS4dPnBbAac3GrLIBBHMOfMgCWYzGuRR2QNUAVx/GrDIAlWCXs9yInS4AqTuJ7GQALsQ4X4w7MCqAfp/Et7sAs/ozmoUv4DcROFgYO4hw+Jxmc1sAcbMfSpDdIa6APl/Ex6Q3SGJiF3cLqlzhpDPTiKt6lAUhqYDr2CStfqiQ10I3bSP2CKYmBqcJGsyNtcZIZ2IMHeJUFQFwDk4SFZ2MWxYlvYAce43lWAHEMNOOQsPJlljgGtuIlnmQJENVAEwaEuZ9pohrownvhJUOmiWpgUDCQeaIY6MQP3C8LYAhH8ygeBaAdM3GnLIDaI3akx6ysAVYK2+3reRWfCKAqfPe/8wRoNA3bsExY/XJNIwMDOIGfZQAswhpcyrt4I4DDOCXmQ2ZWAAuwHueLKD4eQD/O4GtRAPWzoEV4o91aVHFGG/h3llckQM3AqLO8IlMzMOosr8hUhH+7bqwoujjBQA9uqDvLKzIVrJXDZjNq/gIwBVrdmGAs5AAAAABJRU5ErkJggg==" alt="">
-                </div>
-                <div class="fengge2">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAABBCAYAAACw0qYLAAACbklEQVRogcXZTYiNURzH8c9M11shKZoUpcSkiQVJmTQWU1hMobAQUqZMk0xpmDuzRWIhRaFI2bDwklKUhdSsKCWlSFGTBUryUt4Xp6s701zzvD+/5TnPef7f+733nHue5zSNjIwoKfNxtrms6ujHcKWk4i3YgtayDPThAj6VYWA2dqINyjCwH1fwAYo2MAN7sbLWULSBHtzE21pDkQamoRft9Y1FGujGPbyubyzKwGRh6nWO7SjKwC4M48XYjiIMVIRld/N4nUUY2IZneDpeZ94GmjEorHwNL8gzm/AGjxpdkKeBJlRx4H8X5WlgA77gYVkAVRyZ6KK8ADowBXfLAhgS4dPnBbAac3GrLIBBHMOfMgCWYzGuRR2QNUAVx/GrDIAlWCXs9yInS4AqTuJ7GQALsQ4X4w7MCqAfp/Et7sAs/ozmoUv4DcROFgYO4hw+Jxmc1sAcbMfSpDdIa6APl/Ex6Q3SGJiF3cLqlzhpDPTiKt6lAUhqYDr2CStfqiQ10I3bSP2CKYmBqcJGsyNtcZIZ2IMHeJUFQFwDk4SFZ2MWxYlvYAce43lWAHEMNOOQsPJlljgGtuIlnmQJENVAEwaEuZ9pohrownvhJUOmiWpgUDCQeaIY6MQP3C8LYAhH8ygeBaAdM3GnLIDaI3akx6ysAVYK2+3reRWfCKAqfPe/8wRoNA3bsExY/XJNIwMDOIGfZQAswhpcyrt4I4DDOCXmQ2ZWAAuwHueLKD4eQD/O4GtRAPWzoEV4o91aVHFGG/h3llckQM3AqLO8IlMzMOosr8hUhH+7bqwoujjBQA9uqDvLKzIVrJXDZjNq/gIwBVrdmGAs5AAAAABJRU5ErkJggg==" alt="">
-                </div>
-                <Row :gutter="5">
-                    <Col span="8">
-                        <div class="er_wei_ma_right_item er-1">
-                            <h3>50万+</h3>
-                            <p>个人用户的选择</p>
-                        </div>
-                    </Col>
-                    <Col span="8">
-                        <div class="er_wei_ma_right_item er-2">
-                            <h3>100%</h3>
-                            <p>缴纳成功率</p>
-                        </div>
-
-                    </Col>
-                    <Col span="8">
-                        <div class="er_wei_ma_right_item er-3">
-                            <h3>99%</h3>
-                            <p>好评率</p>
-                        </div>
-
-                    </Col>
-
-                </Row>
-            </div>
-            <div class="er_wei_ma_left">
-                <div class="er_wei_ma_left_img">
-                    <img src="../../assets/images/erweima.jpg" alt="">
-                    <p>微信扫一扫 轻松缴社保</p>
-                </div>
-            </div>
-        </div>
-        <div class="kunrao container">
-            <h3>您的困扰，苏易保为您解决</h3>
-            <span>社保六大问题，一键咨询，让您的生活更有保障</span>
-            <div class="kunrao_lists">
-                <div v-for="(item,index) in krLists" class="kunrao_lists_item" :class="'kunrao_lists_item' + (index + 1)" :key='index'>
-                    <p v-html="item.str" class="p111"></p>
-                    <div class="kunrao_lists_item_wrap">
-                        <p v-html="item.wrap"></p>
-                        <button @click="zixun">立即咨询</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="many_server_wrap">
-            <div class="many_server container">
-                <h3>多种服务，满足所需</h3>
-                <div style="width: 100%;height: 40px;"></div>
-                <Row :gutter="16">
-                    <Col span="8">
-                        <div class="many_server_item">
-                            <div class="many_server_item_icon">
-                                <div class="many_server_item_icon_n n1"></div>
-                            </div>
-                            <div class="tops">
-                                <h3>社保缴纳</h3>
-                                <div class="height_line"></div>
-                                <p>苏州市区、工业园区、昆山、张家港</p>
-                                <p>北京、上海、深圳七个城市社保轻松缴</p>
-                                <span>低至99元/月</span>
-                                <button @click="doIt">立即办理</button>
-                            </div>
-
-                        </div>
-
-                    </Col>
-                    <Col span="8">
-                        <div class="many_server_item">
-                            <div class="many_server_item_icon">
-                                <div class="many_server_item_icon_n n2"></div>
-
-                            </div>
-                            <div class="tops">
-                                <h3>社保补缴</h3>
-                                <div class="height_line"></div>
-                                <p>
-                                    目前支持苏州市区、工业园区社保补缴，
-                                    其他城市正在开通中,敬请期待
-                                </p>
-                                <span>300/月</span>
-                                <button @click="doIt">立即办理</button>
-                            </div>
-
-
-                        </div>
-
-                    </Col>
-                    <Col span="8">
-                        <div class="many_server_item">
-                            <div class="many_server_item_icon">
-                                <div class="many_server_item_icon_n n3"></div>
-                            </div>
-                            <div class="tops">
-                                <h3>增值服务</h3>
-                                <div class="height_line"></div>
-                                <p>定点医疗机构变更、银行卡信息变更、
-                                    修改信息等12项社保服务免费办
-                                </p>
-                                <span>0元办理</span>
-                                <button @click="doIt">立即办理</button>
-                            </div>
-                        </div>
-                    </Col>
-                </Row>
-            </div>
-
-        </div>
-        <div class="why_choose container">
-            <h3>为什么要选择苏易保？</h3>
-            <Row :gutter="222">
-                <Col span="8">
-                    <div class="why_choose_item">
-                        <div class="why_choose_item_icon icon1"></div>
-                        <h3>缴纳速度快</h3>
-                        <p>
-                            微信扫一扫，线上一键缴社保
-                            订单秒响应，参保进度实时查
-                            询。关注“苏易保”服务号
-                        </p>
-                    </div>
-                </Col>
-                <Col span="8">
-                    <div class="why_choose_item">
-                        <div class="why_choose_item_icon icon3"></div>
-                        <h3>过程透明</h3>
-                        <p>
-                            参保数据实时同步，服务进展随
-                            时反馈，参保动态短信通知，
-                            轻松掌握参保进度
-                        </p>
-                    </div>
-                </Col>
-                <Col span="8">
-                    <div class="why_choose_item">
-                        <div class="why_choose_item_icon icon2"></div>
-                        <h3>结果可查</h3>
-                        <p>
-                            缴纳成功后可在公众号和社保
-                            &nbsp;&nbsp;&nbsp;&nbsp;官网同步查询缴纳结果，随时更新
-                        </p>
-                    </div>
-                </Col>
-                <Col span="8">
-                    <div class="why_choose_item">
-                        <div class="why_choose_item_icon icon4"></div>
-                        <h3>苏易保提供服务支持</h3>
-                        <p>
-                            苏易保作为互联网社保开创
-                            者，为我们提供专业可靠的
-                            服务支持
-                        </p>
-                    </div>
-                </Col>
-                <Col span="8">
-                    <div class="why_choose_item">
-                        <div class="why_choose_item_icon icon5"></div>
-                        <h3>12项服务免费办理</h3>
-                        <p>
-                            全新服务升级，每月只需一次性支
-                            付服务费，12项社保增值服务
-                            也可享，贴心又放心
-                        </p>
-                    </div>
-                </Col>
-                <Col span="8">
-                    <div class="why_choose_item">
-                        <div class="why_choose_item_icon icon6"></div>
-                        <h3>可全额退款</h3>
-                        <p style="width: 200px;">
-                            平台时间节点前申请退款，
-                            可全额退款（不包括服务费）
-                        </p>
-                    </div>
-                </Col>
-            </Row>
-        </div>
-        <div class="server_liucheng container">
-            <h3>服务流程透明化</h3>
-            <div class="server_liucheng_content">
-                <div class="server_liucheng_content_left">
-                    <ul>
-                        <li v-for="item,index in liuchengLists.lists"
-                            :class="{liuchengLists_active:index === liuchengLists.num}"
-                            @mouseover="hoverFun(index)"
-
-                        >
-                            <a href="javascript:;" :class="'alist'+ index">
-                                {{item.str}}
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-                <div class="server_liucheng_content_right">
-
-
-                    <img :class="{activex:liuchengLists.num===0}" style="height: 430px;"
-                         :src="liuchengLists.src0" alt="">
-
-                    <img
-                        :class="{activex:liuchengLists.num===1}" style="height: 430px;"
-                        :src="liuchengLists.src1" alt="">
-
-                    <img
-                        :class="{activex:liuchengLists.num===2}" style="height: 430px;"
-                        :src="liuchengLists.src2" alt="">
-
-                    <img
-                        :class="{activex:liuchengLists.num===3}"
-                        :src="liuchengLists.src3" alt="">
-
-                </div>
-
-            </div>
-
-        </div>
-        <div class="others_user container">
-            <h3>TA们正在使用苏易保</h3>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-content">
-                            <div class="swiper-slide-content-icon">
-                                <img src="../../assets/images/001.png" alt="">
-                            </div>
-
-                            <h3>申女士</h3>
-                            <span>资深保险代理人</span>
-                            <p>
-                                由于工作性质的关系,公司交的都是商保,对于一个外地来帝都打拼的人来说,最悲哀的就是,当你发现存够了买房的钱,却没有资格。从13年开始一直在苏易保缴纳社保,很方便,价格也很公道,对于没有固定合同的高收入人群来说,非常靠谱。
-                            </p>
-                            <b>2017-07-12</b>
-
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-content">
-                            <div class="swiper-slide-content-icon">
-                                <img src="../../assets/images/002.png" alt="">
-                            </div>
-
-                            <h3>徐先生</h3>
-                            <span>互联网公司程序员</span>
-                            <p>
-                                谁说写代码的都是死宅？正因为工作压力太大,我会用旅游的方式减压,换工作期间我通常会休息1-3个月,去旅游散心,之前也找过其他社保代理机构,交完钱之后就没人理了,都不知道有没有办成功。苏易保非常方便,想交就交,想查就查。
-                            </p>
-                            <b>2017-04-02</b>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-content">
-                            <div class="swiper-slide-content-icon">
-                                <img src="../../assets/images/003.png" alt="">
-                            </div>
-
-                            <h3>武女士</h3>
-                            <span>小超市老板娘</span>
-                            <p>
-                                我们夫妻俩一直在大城市做生意,当准备接孩子来上学的时候才发现社保对于我们来说是多么重要,没有社保,孩子就要变成留守儿童,房子、车子都不能买,还好当时的一个常客给我们推荐了苏易保,所有的难题都迎刃而解,感谢苏易保！
-                            </p>
-                            <b>2017-05-13</b>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-content">
-                            <div class="swiper-slide-content-icon">
-                                <img src="../../assets/images/004.png" alt="">
-                            </div>
-
-                            <h3>刘先生</h3>
-                            <span>自由设计师</span>
-                            <p>
-                                对于90后的我们,最不喜欢的就是被束缚,早九晚五的工作并不是我想要的,在那样的工作环境中,我找不到设计灵感。苏易保简直是我们自由职业者的福音,既可以自由在的赚钱,又可以保证社保不断,我周围的朋友也都在用。
-                            </p>
-                            <b>2017-05-24</b>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="swiper-slide-content">
-                            <div class="swiper-slide-content-icon">
-                                <img src="../../assets/images/005.png" alt="">
-                            </div>
-
-                            <h3>冯雪岩</h3>
-                            <span>新闻APP商务经理</span>
-                            <p>
-                                我比较喜欢追根问底,当得知跳槽时社保不能断的时候,我就必须搞明白这社保到底是怎么回事,苏易保的客服非常耐心的给我解答了两个多小时。强烈推荐苏易保,简直是跳槽、调整期的神器,购买方便,服务效率快,客服也特别nice。
-                            </p>
-                            <b>2017-03-26</b>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-        </div>
     </div>
+    <div class="er_wei_ma container">
+      <div class="er_wei_ma_right">
+        <div class="fengge1">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAABBCAYAAACw0qYLAAACbklEQVRogcXZTYiNURzH8c9M11shKZoUpcSkiQVJmTQWU1hMobAQUqZMk0xpmDuzRWIhRaFI2bDwklKUhdSsKCWlSFGTBUryUt4Xp6s701zzvD+/5TnPef7f+733nHue5zSNjIwoKfNxtrms6ujHcKWk4i3YgtayDPThAj6VYWA2dqINyjCwH1fwAYo2MAN7sbLWULSBHtzE21pDkQamoRft9Y1FGujGPbyubyzKwGRh6nWO7SjKwC4M48XYjiIMVIRld/N4nUUY2IZneDpeZ94GmjEorHwNL8gzm/AGjxpdkKeBJlRx4H8X5WlgA77gYVkAVRyZ6KK8ADowBXfLAhgS4dPnBbAac3GrLIBBHMOfMgCWYzGuRR2QNUAVx/GrDIAlWCXs9yInS4AqTuJ7GQALsQ4X4w7MCqAfp/Et7sAs/ozmoUv4DcROFgYO4hw+Jxmc1sAcbMfSpDdIa6APl/Ex6Q3SGJiF3cLqlzhpDPTiKt6lAUhqYDr2CStfqiQ10I3bSP2CKYmBqcJGsyNtcZIZ2IMHeJUFQFwDk4SFZ2MWxYlvYAce43lWAHEMNOOQsPJlljgGtuIlnmQJENVAEwaEuZ9pohrownvhJUOmiWpgUDCQeaIY6MQP3C8LYAhH8ygeBaAdM3GnLIDaI3akx6ysAVYK2+3reRWfCKAqfPe/8wRoNA3bsExY/XJNIwMDOIGfZQAswhpcyrt4I4DDOCXmQ2ZWAAuwHueLKD4eQD/O4GtRAPWzoEV4o91aVHFGG/h3llckQM3AqLO8IlMzMOosr8hUhH+7bqwoujjBQA9uqDvLKzIVrJXDZjNq/gIwBVrdmGAs5AAAAABJRU5ErkJggg=="
+            alt="">
+        </div>
+        <div class="fengge2">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAABBCAYAAACw0qYLAAACbklEQVRogcXZTYiNURzH8c9M11shKZoUpcSkiQVJmTQWU1hMobAQUqZMk0xpmDuzRWIhRaFI2bDwklKUhdSsKCWlSFGTBUryUt4Xp6s701zzvD+/5TnPef7f+733nHue5zSNjIwoKfNxtrms6ujHcKWk4i3YgtayDPThAj6VYWA2dqINyjCwH1fwAYo2MAN7sbLWULSBHtzE21pDkQamoRft9Y1FGujGPbyubyzKwGRh6nWO7SjKwC4M48XYjiIMVIRld/N4nUUY2IZneDpeZ94GmjEorHwNL8gzm/AGjxpdkKeBJlRx4H8X5WlgA77gYVkAVRyZ6KK8ADowBXfLAhgS4dPnBbAac3GrLIBBHMOfMgCWYzGuRR2QNUAVx/GrDIAlWCXs9yInS4AqTuJ7GQALsQ4X4w7MCqAfp/Et7sAs/ozmoUv4DcROFgYO4hw+Jxmc1sAcbMfSpDdIa6APl/Ex6Q3SGJiF3cLqlzhpDPTiKt6lAUhqYDr2CStfqiQ10I3bSP2CKYmBqcJGsyNtcZIZ2IMHeJUFQFwDk4SFZ2MWxYlvYAce43lWAHEMNOOQsPJlljgGtuIlnmQJENVAEwaEuZ9pohrownvhJUOmiWpgUDCQeaIY6MQP3C8LYAhH8ygeBaAdM3GnLIDaI3akx6ysAVYK2+3reRWfCKAqfPe/8wRoNA3bsExY/XJNIwMDOIGfZQAswhpcyrt4I4DDOCXmQ2ZWAAuwHueLKD4eQD/O4GtRAPWzoEV4o91aVHFGG/h3llckQM3AqLO8IlMzMOosr8hUhH+7bqwoujjBQA9uqDvLKzIVrJXDZjNq/gIwBVrdmGAs5AAAAABJRU5ErkJggg=="
+            alt="">
+        </div>
+        <Row :gutter="5">
+          <Col span="8">
+          <div class="er_wei_ma_right_item er-1">
+            <h3>50万+</h3>
+            <p>个人用户的选择</p>
+          </div>
+          </Col>
+          <Col span="8">
+          <div class="er_wei_ma_right_item er-2">
+            <h3>100%</h3>
+            <p>缴纳成功率</p>
+          </div>
+
+          </Col>
+          <Col span="8">
+          <div class="er_wei_ma_right_item er-3">
+            <h3>99%</h3>
+            <p>好评率</p>
+          </div>
+
+          </Col>
+
+        </Row>
+      </div>
+      <div class="er_wei_ma_left">
+        <div class="er_wei_ma_left_img">
+          <img src="../../assets/images/erweima.jpg" alt="">
+          <p>微信扫一扫 轻松缴社保</p>
+        </div>
+      </div>
+    </div>
+    <div class="kunrao container">
+      <h3>您的困扰，苏易保为您解决</h3>
+      <span>社保六大问题，一键咨询，让您的生活更有保障</span>
+      <div class="kunrao_lists">
+        <div v-for="(item,index) in krLists" class="kunrao_lists_item" :class="'kunrao_lists_item' + (index + 1)"
+          :key='index'>
+          <p v-html="item.str" class="p111"></p>
+          <div class="kunrao_lists_item_wrap">
+            <p v-html="item.wrap"></p>
+            <button @click="zixun">立即咨询</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="many_server_wrap">
+      <div class="many_server container">
+        <h3>多种服务，满足所需</h3>
+        <div style="width: 100%;height: 40px;"></div>
+        <Row :gutter="16">
+          <Col span="8">
+          <div class="many_server_item">
+            <div class="many_server_item_icon">
+              <div class="many_server_item_icon_n n1"></div>
+            </div>
+            <div class="tops">
+              <h3>社保缴纳</h3>
+              <div class="height_line"></div>
+              <p>苏州市区、工业园区、昆山、张家港</p>
+              <p>北京、上海、深圳七个城市社保轻松缴</p>
+              <span>低至99元/月</span>
+              <button @click="doIt">立即办理</button>
+            </div>
+
+          </div>
+
+          </Col>
+          <Col span="8">
+          <div class="many_server_item">
+            <div class="many_server_item_icon">
+              <div class="many_server_item_icon_n n2"></div>
+
+            </div>
+            <div class="tops">
+              <h3>社保补缴</h3>
+              <div class="height_line"></div>
+              <p>
+                目前支持苏州市区、工业园区社保补缴，
+                其他城市正在开通中,敬请期待
+              </p>
+              <span>300/月</span>
+              <button @click="doIt">立即办理</button>
+            </div>
+
+
+          </div>
+
+          </Col>
+          <Col span="8">
+          <div class="many_server_item">
+            <div class="many_server_item_icon">
+              <div class="many_server_item_icon_n n3"></div>
+            </div>
+            <div class="tops">
+              <h3>增值服务</h3>
+              <div class="height_line"></div>
+              <p>定点医疗机构变更、银行卡信息变更、
+                修改信息等12项社保服务免费办
+              </p>
+              <span>0元办理</span>
+              <button @click="doIt">立即办理</button>
+            </div>
+          </div>
+          </Col>
+        </Row>
+      </div>
+
+    </div>
+    <div class="why_choose container">
+      <h3>为什么要选择苏易保？</h3>
+      <Row :gutter="222">
+        <Col span="8">
+        <div class="why_choose_item">
+          <div class="why_choose_item_icon icon1"></div>
+          <h3>缴纳速度快</h3>
+          <p>
+            微信扫一扫，线上一键缴社保
+            订单秒响应，参保进度实时查
+            询。关注“苏易保”服务号
+          </p>
+        </div>
+        </Col>
+        <Col span="8">
+        <div class="why_choose_item">
+          <div class="why_choose_item_icon icon3"></div>
+          <h3>过程透明</h3>
+          <p>
+            参保数据实时同步，服务进展随
+            时反馈，参保动态短信通知，
+            轻松掌握参保进度
+          </p>
+        </div>
+        </Col>
+        <Col span="8">
+        <div class="why_choose_item">
+          <div class="why_choose_item_icon icon2"></div>
+          <h3>结果可查</h3>
+          <p>
+            缴纳成功后可在公众号和社保
+            &nbsp;&nbsp;&nbsp;&nbsp;官网同步查询缴纳结果，随时更新
+          </p>
+        </div>
+        </Col>
+        <Col span="8">
+        <div class="why_choose_item">
+          <div class="why_choose_item_icon icon4"></div>
+          <h3>苏易保提供服务支持</h3>
+          <p>
+            苏易保作为互联网社保开创
+            者，为我们提供专业可靠的
+            服务支持
+          </p>
+        </div>
+        </Col>
+        <Col span="8">
+        <div class="why_choose_item">
+          <div class="why_choose_item_icon icon5"></div>
+          <h3>12项服务免费办理</h3>
+          <p>
+            全新服务升级，每月只需一次性支
+            付服务费，12项社保增值服务
+            也可享，贴心又放心
+          </p>
+        </div>
+        </Col>
+        <Col span="8">
+        <div class="why_choose_item">
+          <div class="why_choose_item_icon icon6"></div>
+          <h3>可全额退款</h3>
+          <p style="width: 200px;">
+            平台时间节点前申请退款，
+            可全额退款（不包括服务费）
+          </p>
+        </div>
+        </Col>
+      </Row>
+    </div>
+    <div class="server_liucheng container">
+      <h3>服务流程透明化</h3>
+      <div class="server_liucheng_content">
+        <div class="server_liucheng_content_left">
+          <ul>
+            <li v-for="item,index in liuchengLists.lists" :class="{liuchengLists_active:index === liuchengLists.num}"
+              @mouseover="hoverFun(index)">
+              <a href="javascript:;" :class="'alist'+ index">
+                {{item.str}}
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="server_liucheng_content_right">
+
+
+          <img :class="{activex:liuchengLists.num===0}" style="height: 430px;" :src="liuchengLists.src0" alt="">
+
+          <img :class="{activex:liuchengLists.num===1}" style="height: 430px;" :src="liuchengLists.src1" alt="">
+
+          <img :class="{activex:liuchengLists.num===2}" style="height: 430px;" :src="liuchengLists.src2" alt="">
+
+          <img :class="{activex:liuchengLists.num===3}" :src="liuchengLists.src3" alt="">
+
+        </div>
+
+      </div>
+
+    </div>
+    <div class="others_user container">
+      <h3>TA们正在使用苏易保</h3>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-slide-content">
+              <div class="swiper-slide-content-icon">
+                <img src="../../assets/images/001.png" alt="">
+              </div>
+
+              <h3>申女士</h3>
+              <span>资深保险代理人</span>
+              <p>
+                由于工作性质的关系,公司交的都是商保,对于一个外地来帝都打拼的人来说,最悲哀的就是,当你发现存够了买房的钱,却没有资格。从13年开始一直在苏易保缴纳社保,很方便,价格也很公道,对于没有固定合同的高收入人群来说,非常靠谱。
+              </p>
+              <b>2017-07-12</b>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-content">
+              <div class="swiper-slide-content-icon">
+                <img src="../../assets/images/002.png" alt="">
+              </div>
+
+              <h3>徐先生</h3>
+              <span>互联网公司程序员</span>
+              <p>
+                谁说写代码的都是死宅？正因为工作压力太大,我会用旅游的方式减压,换工作期间我通常会休息1-3个月,去旅游散心,之前也找过其他社保代理机构,交完钱之后就没人理了,都不知道有没有办成功。苏易保非常方便,想交就交,想查就查。
+              </p>
+              <b>2017-04-02</b>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="swiper-slide-content">
+              <div class="swiper-slide-content-icon">
+                <img src="../../assets/images/003.png" alt="">
+              </div>
+
+              <h3>武女士</h3>
+              <span>小超市老板娘</span>
+              <p>
+                我们夫妻俩一直在大城市做生意,当准备接孩子来上学的时候才发现社保对于我们来说是多么重要,没有社保,孩子就要变成留守儿童,房子、车子都不能买,还好当时的一个常客给我们推荐了苏易保,所有的难题都迎刃而解,感谢苏易保！
+              </p>
+              <b>2017-05-13</b>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-content">
+              <div class="swiper-slide-content-icon">
+                <img src="../../assets/images/004.png" alt="">
+              </div>
+
+              <h3>刘先生</h3>
+              <span>自由设计师</span>
+              <p>
+                对于90后的我们,最不喜欢的就是被束缚,早九晚五的工作并不是我想要的,在那样的工作环境中,我找不到设计灵感。苏易保简直是我们自由职业者的福音,既可以自由在的赚钱,又可以保证社保不断,我周围的朋友也都在用。
+              </p>
+              <b>2017-05-24</b>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="swiper-slide-content">
+              <div class="swiper-slide-content-icon">
+                <img src="../../assets/images/005.png" alt="">
+              </div>
+
+              <h3>冯雪岩</h3>
+              <span>新闻APP商务经理</span>
+              <p>
+                我比较喜欢追根问底,当得知跳槽时社保不能断的时候,我就必须搞明白这社保到底是怎么回事,苏易保的客服非常耐心的给我解答了两个多小时。强烈推荐苏易保,简直是跳槽、调整期的神器,购买方便,服务效率快,客服也特别nice。
+              </p>
+              <b>2017-03-26</b>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-    import Swiper from 'swiper'
-    import src1 from '../../assets/images/1.png'
-    import src2 from '../../assets/images/2.png'
-    import src3 from '../../assets/images/3.png'
-    import src4 from '../../assets/images/4.png'
-    export default {
-        name: "Home",
-        components: {
+  import Swiper from 'swiper'
+  import src1 from '../../assets/images/1.png'
+  import src2 from '../../assets/images/2.png'
+  import src3 from '../../assets/images/3.png'
+  import src4 from '../../assets/images/4.png'
+  export default {
+    name: "Home",
+    components: {},
+    metaInfo: {
+      title: '苏易保|苏易保社保代缴|社保代缴|苏州市社保代缴|在线社保代缴平台', // set a title
+      meta: [{ // set meta
+          name: 'description',
+          content: '苏易保社保是中国互联网社保开创者,致力于为企业提供社保,综合保障,薪酬,残保金等综合解决方案.依托更透明,更高效,更放心的苏易保全直营服务体系,帮助广大企业控制用工风险,降低人工成本,提升员工福利'
         },
-        data() {
-            return {
-                modal: false,
-                liuchengLists: {
-                    num: 0,
-                    src0: src1,
-                    src1: src2,
-                    src2: src3,
-                    src3: src4,
-                    lists: [
-                        {
-                            str: '关注微信“苏易保”左下菜单选择“缴社保”'
-                        },
-                        {
-                            str: '注册“苏易保”,填选参保人信息'
-                        },
-                        {
-                            str: '手机支付,缴纳成功！'
-                        },
-                        {
-                            str: '"服务记录",查询缴纳进度'
-                        },
-
-                    ]
-                },
-                carousel: 0,
-                krLists: [
-                    {
-                        str: "看病买药有报销",
-                        wrap: '看病就医及时报，生活更有保障'
-                    },
-                    {
-                        str: "养老生活\n" +
-                        "有保障",
-                        wrap: '社保缴满15年上，才可申请养老金\n'
-                    },
-                    {
-                        str: "买房买车\n" +
-                        "有资质",
-                        wrap: '全国多数主要城市买房、申请公租房，购车摇车牌，需连续缴纳社保且不能断缴\n'
-
-                    },
-                    {
-                        str: "孩子入学\n" +
-                        "不用愁",
-                        wrap: '家长没有本地社保，影响子女进入当地优质学校，高考只能回户籍所在地\n'
-                    },
-                    {
-                        str: "产检生育少负担",
-                        wrap: '生育保险缴满规定年限后，才可以享受生育医疗服务\n'
-                    },
-                    {
-                        str: "积分落户\n" +
-                        "优先办理",
-                        wrap: '全国多数一线城市申请积分落户，需连续缴纳社保且不能断缴\n'
-                    },
-                ]
-            }
-        },
-        methods: {
-            colseIt() {
-                this.$store.commit("modalFun", "hide");
-            },
-            doIt() {
-                this.$store.commit("modalFun", "show");
-            },
-            zixun() {
-                this.$store.commit("iframeFun", "show");
-            },
-            hoverFun(index) {
-                this.liuchengLists.num = index;
-            },
-        },
-
-        mounted() {
-            //执行swiper
-            var mySwiper = new Swiper('.swiper-container', {
-                autoplay: 5000,//可选选项，自动滑动
-                nextButton: '.swiper-button-next',
-                prevButton: '.swiper-button-prev',
-                slidesPerView: 2,
-                spaceBetween: 0,
-                loop: true,
-            })
-        },
-        created() {
-
+        { // set meta
+          name: 'keywords',
+          content: '苏易保,代缴社保,社保代缴,昆山社保代缴,苏州工业园区社保代缴、苏州社保代缴、苏州市区社保代缴'
         }
+      ],
+    },
+    data() {
+      return {
+        modal: false,
+        liuchengLists: {
+          num: 0,
+          src0: src1,
+          src1: src2,
+          src2: src3,
+          src3: src4,
+          lists: [{
+              str: '关注微信“苏易保”左下菜单选择“缴社保”'
+            },
+            {
+              str: '注册“苏易保”,填选参保人信息'
+            },
+            {
+              str: '手机支付,缴纳成功！'
+            },
+            {
+              str: '"服务记录",查询缴纳进度'
+            },
+
+          ]
+        },
+        carousel: 0,
+        krLists: [{
+            str: "看病买药有报销",
+            wrap: '看病就医及时报，生活更有保障'
+          },
+          {
+            str: "养老生活\n" +
+              "有保障",
+            wrap: '社保缴满15年上，才可申请养老金\n'
+          },
+          {
+            str: "买房买车\n" +
+              "有资质",
+            wrap: '全国多数主要城市买房、申请公租房，购车摇车牌，需连续缴纳社保且不能断缴\n'
+
+          },
+          {
+            str: "孩子入学\n" +
+              "不用愁",
+            wrap: '家长没有本地社保，影响子女进入当地优质学校，高考只能回户籍所在地\n'
+          },
+          {
+            str: "产检生育少负担",
+            wrap: '生育保险缴满规定年限后，才可以享受生育医疗服务\n'
+          },
+          {
+            str: "积分落户\n" +
+              "优先办理",
+            wrap: '全国多数一线城市申请积分落户，需连续缴纳社保且不能断缴\n'
+          },
+        ]
+      }
+    },
+    methods: {
+      colseIt() {
+        this.$store.commit("modalFun", "hide");
+      },
+      doIt() {
+        this.$store.commit("modalFun", "show");
+      },
+      zixun() {
+        this.$store.commit("iframeFun", "show");
+      },
+      hoverFun(index) {
+        this.liuchengLists.num = index;
+      },
+    },
+
+    mounted() {
+      //执行swiper
+      var mySwiper = new Swiper('.swiper-container', {
+        autoplay: 5000, //可选选项，自动滑动
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 2,
+        spaceBetween: 0,
+        loop: true,
+      })
+    },
+    created() {
+
     }
+  }
+
 </script>
 
 <style scoped type="text/less" lang="less">
-    @import "../../../node_modules/swiper/dist/css/swiper.css";
+  @import "../../../node_modules/swiper/dist/css/swiper.css";
 
     .iframe_wrap {
         position: fixed;
