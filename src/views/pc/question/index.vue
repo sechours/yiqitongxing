@@ -35,7 +35,7 @@
         <!--社保相关问题-->
         <div class="shebao_question" v-if="num===1">
           <Collapse v-model="shebao.value" simple accordion>
-            <Panel :name="index+''" v-for="item,index in shebao.lists" :key="index">
+            <Panel :name="index+''" v-for="(item,index) in shebao.lists" :key="index">
               {{item.name}}
               <p slot="content" v-html="item.p"></p>
             </Panel>
