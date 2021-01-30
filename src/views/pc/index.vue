@@ -6,12 +6,12 @@
         <CarouselItem>
           <div class="demo-carousel demo-carousel1"></div>
         </CarouselItem>
-        <CarouselItem>
+        <!-- <CarouselItem>
           <div class="demo-carousel demo-carousel2"></div>
         </CarouselItem>
         <CarouselItem>
           <div class="demo-carousel demo-carousel3"></div>
-        </CarouselItem>
+        </CarouselItem> -->
       </Carousel>
 
     </div>
@@ -481,20 +481,20 @@
                 height: 450px;
             }
             .demo-carousel1 {
-                background: url("https://www.haoshebao.com/static/img/pc1.9d053fd.jpg") no-repeat top center;
+                background: url("https://static.cache.51shebao.com/statics/output/images/v6_images/index/Banner.png") no-repeat top center;
                 -webkit-background-size: auto 100%;
                 background-size: auto 100%;
             }
-            .demo-carousel2 {
-                background: url("https://www.haoshebao.com/static/img/pc2.daa1da3.jpg") no-repeat top center;
-                -webkit-background-size: auto 100%;
-                background-size: auto 100%;
-            }
-            .demo-carousel3 {
-                background: url("https://www.haoshebao.com/static/img/pc3.efc07cb.jpg") no-repeat top center;
-                -webkit-background-size: auto 100%;
-                background-size: auto 100%;
-            }
+            // .demo-carousel2 {
+            //     background: url("https://www.haoshebao.com/static/img/pc2.daa1da3.jpg") no-repeat top center;
+            //     -webkit-background-size: auto 100%;
+            //     background-size: auto 100%;
+            // }
+            // .demo-carousel3 {
+            //     background: url("https://www.haoshebao.com/static/img/pc3.efc07cb.jpg") no-repeat top center;
+            //     -webkit-background-size: auto 100%;
+            //     background-size: auto 100%;
+            // }
             /*.demo-carousel4 {*/
             /*background: url("../../assets/images/banner_index.png") no-repeat top center;*/
             /*}*/
